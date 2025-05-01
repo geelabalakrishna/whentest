@@ -15,7 +15,7 @@ pipeline {
                 }
                 stage('Master Branch Build_dev') {
                     when {
-                        branch pattern: "dev", comparator: "EQUALS"
+                        branch pattern: "main", comparator: "EQUALS"
                     }
                     steps {
                         echo 'Running on the dev branch only'
